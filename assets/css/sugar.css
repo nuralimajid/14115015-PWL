@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Monsterrat|Merriweather:400,600&display=swap');
+
+nav ul {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    box-shadow: 13px 12px 23px #eee;
+}
+
+nav li {
+    flex: 1;
+
+}
+
+nav li a {
+    font-family: 'Monsterrat';
+    text-decoration: none;
+    color: #0000;
+}
