@@ -60,11 +60,33 @@ section p {
 }
 
 .index {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .index p {
   color: #06020a;
+}
+
+.flex-con {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.galery {
+  justify-content: center;
+}
+
+.galery img {
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+}
+
+h1 {
+  text-align: center;
 }
 
 .container {
@@ -154,6 +176,15 @@ td {
 }
 
 @media (max-width: 900px) {
+  .index {
+    margin-top: 20%;
+  }
+
+  .flex-con img {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .container {
     flex-direction: column;
     justify-content: center;
