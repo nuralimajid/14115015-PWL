@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css?family=Monsterrat|Merriweather:400,600&display=swap");
+
+
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid #b48282;
+  padding: 0.2rem;
+  box-shadow: 13px 12px 23px #be8b8b;
+  /* position: relative; */
+  justify-content: center;
+  width: 90%;
+  position: fixed;
+  /* margin-bottom: auto; */
+  z-index: 1;
+  /* margin: 0 10% 0 10%; */
+  margin-left: 3%;
+  border-radius: 25px;
+}
+
+/* .tetap {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+} */
+
+nav li {
+  /* flex: 1; */
+  padding: 15px;
+  background-color: transparent;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+nav li a {
+  font-family: "Monsterrat";
+  text-decoration: none;
+  color: #141b14e5;
+}
+
+a {
+  text-decoration: none;
+  color: #06020a;
+}
+
+section {
+  margin-left: 15%;
+  margin-right: 15%;
+  word-break: break-word;
+  padding-top: 2rem;
+}
+
+section h1 {
+  font-family: "Monsterrat";
+  font-size: 32px;
+}
+
+section h3 {
+  font-family: "Merriweather";
+}
+
+section p {
+  font-family: "Merriweather";
+}
+
+.index {
+  margin-top: 10%;
+}
+
+.index p {
+  color: #06020a;
+}
+
+.flex-con {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  justify-content: center;
+}
+
+.galery {
+  justify-content: center;
+}
+
+.galery img {
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  /*flexbox container*/
+  /* float: left; */
+  display: flex;
+  /* flex-wrap: nowrap; */
+  margin-top: 20%;
+  flex-wrap: wrap;
+  background-color: rgb(41, 34, 41);
+  border-radius: 15px;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  /* margin-bottom: 10%; */
+  /* justify-content: left; */
+  align-items: center;
+  padding: 15px;
+}
+
+.card {
+  /*flex-item*/
+  /* display: flexbox; */
+  /* flex-wrap: wrap;
+  flex-flow: row wrap; */
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 #8f888833;
+  border-radius: 10px;
+  background-color: #19181a;
+  width: 50%;
+  /* float: left; */
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row-reverse;
+}
+
+.card2 {
+  width: 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  position: relative;
+  padding-left: 15px;
+  z-index: 1;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3>p {
+  color: #06020a;
+}
+
+p {
+  color: azure;
+  text-align: justify;
+  padding: 30px;
+}
+
+.card>img {
+  margin: 10% 25% 5% 25%;
+  border-radius: 100%;
+  width: 50%;
+  justify-content: center;
+}
+
+table,
+tr,
+td {
+  /* background-color: LightGoldenRodYellow; */
+  font-family: century gothic;
+  color: green;
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -10px;
+  width: 55px;
+  height: 30px;
+  background: #242121;
+  margin-left: 94px;
+  margin-right: 6px;
+  margin-top: 1.5%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  background: #5a047c;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  -webkit-transition: ease-in-out 200ms;
+  -moz-transition: ease-in-out 200ms;
+  -ms-transition: ease-in-out 200ms;
+  -o-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+}
+
+input:checked+label {
+  background: rgb(122, 133, 127);
+}
+
+input:checked+label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--lightBg);
+  --lightBtn: #FE016C;
+  --lightBg: #fff;
+  --lightColor: #e9d8d8;
+}
+
+html[data-theme='dark'] {
+  background: var(--lightBg);
+  --lightBtn: #FFBD07;
+  --lightBg: #070707;
+  /* --lightColor: #fff; */
+  color: aliceblue;
+
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  -webkit-transition: ease-in-out 200ms !important;
+  -moz-transition: ease-in-out 200ms !important;
+  -ms-transition: ease-in-out 200ms !important;
+  -o-transition: ease-in-out 200ms !important;
+  transition: ease-in-out 200ms !important;
+  transition-delay: 0 !important;
+  color: aliceblue;
+}
+
+@media screen and (min-width:320px) and (max-width: 900px) {
+  .index {
+    margin-top: 20%;
+  }
+
+  .flex-con img {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30%;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 #8f888833;
+    border-radius: 10px;
+    background-color: #19181a;
+    width: 70%;
+    font-size: small;
+  }
+
+  .index {
+    margin-top: 30%;
+  }
+
+  .card2 {
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 #8f888833;
+    border-radius: 10px;
+    background-color: #19181a;
+    width: 80%;
+    font-size: small;
+  }
+
+  img {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 25%;
+  }
+
+  nav ul {
+    width: 70%;
+    margin: 0 10% 0 10%;
+    align-items: center;
+    padding: 3px;
+    justify-content: center;
+
+  }
+
+  nav li {
+    padding: 5px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  html {
+    width: 100%;
+    height: 90vh;
+
+  }
+}

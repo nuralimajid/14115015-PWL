@@ -1,0 +1,106 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="widht=device-width,initial-scale=1.0">
+        <title>WEB LANJUT</title>
+        <link rel="stylesheet" href="/assets/css/sugar.css">
+    </head>
+
+    <body>
+        <nav >
+    <ul>
+        <li>
+            <a href="/">
+                Rumah
+            </a>
+        </li>
+        <li>
+            <a href="/tentang/14115015">
+            Tentang Aku 
+            </a>
+        </li>
+        <li>
+            <a href="/galeri/gal">
+            Galery
+            </a>
+        </li>
+        <input class="container_toggle" type="checkbox" id="switch" name="mode">
+        <label for="switch"></label>
+    </ul>
+
+</nav>
+        <section>
+            <div class="container">
+    <div class="card">
+        <img src="https://0.academia-photos.com/30312337/9792778/18120796/s200_nur_ali.majid.jpg" alt="nur ali majid">
+        <p>Halo, Perkenalkan Nama Saya Nur Ali Majid saya merupakan Mahasiswa Teknik Informatika 2015 Di salah satu di Institusi Di indonesia yaitu
+        Institut Teknologi Sumatera (ITERA).Saya Memiliki minat dan Hobi dai Web Development.</p>
+    </div>
+    <div class="card2">
+        <table>
+            <tr>
+                <td>
+                    <b>NAMA</b>
+                </td>
+                <td>:   Nur Ali Majid</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>NIM</b>
+                </td>
+                <td>:   14115015</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>ALAMAT</b>
+                </td>
+                <td>:   Lampung Selatan</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>JENIS KELAMIN</b>
+                </td>
+                <td>:   Laki - Laki</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>AGAMA</b>
+                </td>
+                <td>:   Islam</td>
+            </tr>
+        </table>
+    </div>
+</div>
+        </section>
+
+        <script>
+            var checkbox = document.querySelector('input[name=mode]');
+
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    trans()
+                    document
+                        .documentElement
+                        .setAttribute('data-theme', 'dark')
+                } else {
+                    trans()
+                    document
+                        .documentElement
+                        .setAttribute('data-theme', 'light')
+                }
+            })
+
+            let trans = () => {
+                document
+                    .documentElement
+                    .classList
+                    .add('transition');
+                window.setTimeout(() => {
+                    document
+                        .documentElement
+                        .classList
+                        .remove('transition');
+                }, 500)
+            }
+        </script>
+    </body>
+</html>
