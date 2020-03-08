@@ -37,12 +37,12 @@ nav li {
 nav li a {
   font-family: "Monsterrat";
   text-decoration: none;
-  color: #141b14e5;
+  /* color: #141b14e5; */
 }
 
 a {
   text-decoration: none;
-  color: #06020a;
+  /*  color: #06020a; */
 }
 
 section {
@@ -69,9 +69,9 @@ section p {
   margin-top: 10%;
 }
 
-.index p {
+/* .index p {
   color: #06020a;
-}
+} */
 
 .flex-con {
   display: flex;
@@ -154,12 +154,12 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h3>p {
+/* h3>p {
   color: #06020a;
-}
+} */
 
 p {
-  color: azure;
+  /* color: azure; */
   text-align: justify;
   padding: 30px;
 }
@@ -247,15 +247,16 @@ html {
   background: var(--lightBg);
   --lightBtn: #FE016C;
   --lightBg: #fff;
-  --lightColor: #e9d8d8;
+  --lightColor: #0e0d0d;
+  color: var(--lightColor);
 }
 
 html[data-theme='dark'] {
   background: var(--lightBg);
   --lightBtn: #FFBD07;
   --lightBg: #070707;
-  /* --lightColor: #fff; */
-  color: aliceblue;
+  --lightColor: #fff;
+  color: var(--lightColor);
 
 }
 
