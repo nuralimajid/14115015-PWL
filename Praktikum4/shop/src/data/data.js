@@ -21,3 +21,19 @@ let Profile = [
         "github": "https://github.com/majidilkhithar/14115015-PWL"
     }
 ];
+
+export function allBlog() {
+    return Blogs;
+}
+
+export function fetchBlog(id) {
+    return Blogs.map((data) => {
+        if (data.id == id) {
+            return data
+        }
+    })
+}
+
+export function Profiles() {
+    return Profile;
+}
