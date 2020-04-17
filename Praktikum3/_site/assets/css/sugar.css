@@ -181,6 +181,7 @@ td {
   border-collapse: collapse;
 }
 
+/* Penambahan Switch Button */
 input[type=checkbox] {
   height: 0;
   width: 0;
@@ -196,7 +197,6 @@ label {
   margin-left: 94px;
   margin-right: 6px;
   margin-top: 1.5%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,7 +225,7 @@ label:after {
 }
 
 input:checked+label {
-  background: rgb(122, 133, 127);
+  background: #7a857f;
 }
 
 input:checked+label:after {
